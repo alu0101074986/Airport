@@ -1,0 +1,162 @@
+\doxysection{es.\+ull.\+passengers.\+Passenger Class Reference}
+\hypertarget{classes_1_1ull_1_1passengers_1_1_passenger}{}\label{classes_1_1ull_1_1passengers_1_1_passenger}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a740acbb5a5a2fb7b9f94d2bc06650fb3}{Passenger}} (String identifier, String name, String country\+Code)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger} class. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}{get\+Identifier}} ()
+\begin{DoxyCompactList}\small\item\em Gets the passenger\textquotesingle{}s identifier. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the passenger\textquotesingle{}s name. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}{get\+Country\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Gets the passenger\textquotesingle{}s country code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af}{get\+Flight}} ()
+\begin{DoxyCompactList}\small\item\em Gets the flight associated with the passenger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e}{join\+Flight}} (\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} flight)
+\begin{DoxyCompactList}\small\item\em Joins a flight. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a304d20a6a14fc06b986745b345720cde}{set\+Flight}} (\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} flight)
+\begin{DoxyCompactList}\small\item\em Sets the flight for the passenger. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Converts the passenger information to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a740acbb5a5a2fb7b9f94d2bc06650fb3}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!Passenger@{Passenger}}
+\index{Passenger@{Passenger}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{Passenger()}{Passenger()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_a740acbb5a5a2fb7b9f94d2bc06650fb3} 
+es.\+ull.\+passengers.\+Passenger.\+Passenger (\begin{DoxyParamCaption}\item[{String}]{identifier}{, }\item[{String}]{name}{, }\item[{String}]{country\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \doxylink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger} class. 
+
+Initializes a new \doxylink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger} object with the provided identifier, name, and country code. Validates the country code against ISO standards.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & Unique identifier for the passenger. \\
+\hline
+{\em name} & Name of the passenger. \\
+\hline
+{\em country\+Code} & ISO country code of the passenger\textquotesingle{}s nationality. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If the country code is invalid. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getCountryCode@{getCountryCode}}
+\index{getCountryCode@{getCountryCode}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getCountryCode()}{getCountryCode()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520} 
+String es.\+ull.\+passengers.\+Passenger.\+get\+Country\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the passenger\textquotesingle{}s country code. 
+
+\begin{DoxyReturn}{Returns}
+The ISO country code of the passenger\textquotesingle{}s nationality. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getFlight@{getFlight}}
+\index{getFlight@{getFlight}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getFlight()}{getFlight()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af} 
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} es.\+ull.\+passengers.\+Passenger.\+get\+Flight (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the flight associated with the passenger. 
+
+\begin{DoxyReturn}{Returns}
+The flight object associated with the passenger. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getIdentifier@{getIdentifier}}
+\index{getIdentifier@{getIdentifier}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getIdentifier()}{getIdentifier()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231} 
+String es.\+ull.\+passengers.\+Passenger.\+get\+Identifier (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the passenger\textquotesingle{}s identifier. 
+
+\begin{DoxyReturn}{Returns}
+The unique identifier of the passenger. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getName@{getName}}
+\index{getName@{getName}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7} 
+String es.\+ull.\+passengers.\+Passenger.\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the passenger\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+The name of the passenger. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!joinFlight@{joinFlight}}
+\index{joinFlight@{joinFlight}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{joinFlight()}{joinFlight()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e} 
+void es.\+ull.\+passengers.\+Passenger.\+join\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}}}]{flight}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Joins a flight. 
+
+The passenger leaves their current flight (if any) and joins the specified flight. Handles removal from the previous flight and addition to the new flight.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight} & The flight the passenger wants to join. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If the passenger cannot be removed or added to a flight. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a304d20a6a14fc06b986745b345720cde}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!setFlight@{setFlight}}
+\index{setFlight@{setFlight}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{setFlight()}{setFlight()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_a304d20a6a14fc06b986745b345720cde} 
+void es.\+ull.\+passengers.\+Passenger.\+set\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}}}]{flight}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the flight for the passenger. 
+
+Updates the flight associated with the passenger.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight} & The new flight for the passenger. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!toString@{toString}}
+\index{toString@{toString}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1} 
+String es.\+ull.\+passengers.\+Passenger.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts the passenger information to a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the passenger\textquotesingle{}s details. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/ull/passengers/\mbox{\hyperlink{_passenger_8java}{Passenger.\+java}}\end{DoxyCompactItemize}

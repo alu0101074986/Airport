@@ -1,0 +1,44 @@
+
+T
+addPassengerBes.ull.flights.Flight#addPassenger(Les/ull/passengers/Passenger;)Z —4"Not enough seats for flight "java.lang.String)thisU U("es.ull.flights.Flight4	passengerU  U(3"es.ull.passengers.Passenger)thisU U("es.ull.flights.Flight4	passengerU  U(3"es.ull.passengers.Passenger"úc
+a
+V V(#"I
+getNumberOfPassengers.es.ull.flights.Flight#getNumberOfPassengers()I *2int8>
+<
+V' V(,"&
+#get-field# seats#get-field# seats*2int5
+3
+V V(,"
+
+#binop >=#
+#binop >=#*2boolean"
+V V(, *V V(
+"¬H
+F
+W W(Z"
+#new-object##new-object#2java.lang.RuntimeExceptionQ
+O
+W W(Z"<
+#instance-init#)java.lang.RuntimeException#instance-init#*8u
+s
+WH W(Y	"N
+getFlightNumber9es.ull.flights.Flight#getFlightNumber()Ljava/lang/String; *2java.lang.String8*
+(
+W' W(Y
+"
+	#binop +#	#binop +#*	X
+V
+W W(Z"B
+<init>6java.lang.RuntimeException#<init>(Ljava/lang/String;)V(*
+82
+W W(["¤j
+h
+Y Y(!"N
+	setFlight?es.ull.passengers.Passenger#setFlight(Les/ull/flights/Flight;)V *2void8R
+P
+Z Z("0
+#get-field# passengers#get-field# passengers*2java.util.SetP
+N
+Z Z(("1
+add&java.util.Set#add(Ljava/lang/Object;)Z (*2boolean8
+Z Z()*PC:/Users/danie/Documents/GitHub/Airport/src/main/java/es/ull/flights/Flight.java

@@ -1,4 +1,4 @@
-/*
+/**
  * ========================================================================
  *
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -17,6 +17,8 @@
  * limitations under the License.
  *
  * ========================================================================
+ *  * @author Marcelo Daniel Choque Mamani
+ *  * @version 1.0
  */
 package es.ull.flights;
 

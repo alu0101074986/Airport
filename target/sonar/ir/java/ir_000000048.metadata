@@ -1,0 +1,5 @@
+java.util.Objects#checkIndex(II)I
+true
+c471367693ee8906820b64bccfd991bf
+java.lang.IndexOutOfBoundsException#<init>()V
+java.lang.IndexOutOfBoundsException#instance-init#

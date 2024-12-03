@@ -1,0 +1,36 @@
+
+>
+Flight2es.ull.flights.Flight#<init>(Ljava/lang/String;I)V ½-"Invalid flight number"java.lang.String)this0 0("es.ull.flights.Flight,flightNumber0 0(%"java.lang.Stringseats0' 0(0"int"es.ull.flights.Flight)this0 0("es.ull.flights.Flight,flightNumber0 0(%"java.lang.Stringseats0' 0(0"int"˜V
+T
+1 1(!"*
+#get-field# pattern#get-field# pattern*2java.util.regex.Pattern˜
+•
+1 1(7matcher"_
+matcherRjava.util.regex.Pattern#matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;(*2java.util.regex.Matcher8M
+K
+2 2("/
+matches"java.util.regex.Matcher#matches()Z(*2boolean86
+4
+2 2("
+#unaryop !##unaryop !#*2boolean"
+2 2( *2 2(
+"‰H
+F
+3 3(?	"
+#new-object##new-object#2java.lang.RuntimeExceptionQ
+O
+3 3(?
+"<
+#instance-init#)java.lang.RuntimeException#instance-init#*	8X
+V
+3 3(?"B
+<init>6java.lang.RuntimeException#<init>(Ljava/lang/String;)V(*	82
+3 3(@	"–H
+F
+5 5(("4
+#set-field# flightNumber#set-field# flightNumber*:
+8
+6 6("&
+#set-field# seats#set-field# seats*
+
+7 7(*PC:/Users/danie/Documents/GitHub/Airport/src/main/java/es/ull/flights/Flight.java
