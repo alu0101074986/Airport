@@ -1,7 +1,0 @@
-es.ull.passengers.Passenger#toString()Ljava/lang/String;
-false
-485cab6845dc6d84f1abf7ecfeb0cee3
-==
-getCountryCode es.ull.passengers.Passenger#getCountryCode()Ljava/lang/String;
-getIdentifier es.ull.passengers.Passenger#getIdentifier()Ljava/lang/String;
-getName es.ull.passengers.Passenger#getName()Ljava/lang/String;

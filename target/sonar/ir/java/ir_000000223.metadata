@@ -1,9 +1,0 @@
-es.ull.passengers.Passenger#joinFlight(Les/ull/flights/Flight;)V
-false
-250f54b34cc6a745ee83c308709189dc
-java.lang.RuntimeException#<init>(Ljava/lang/String;)V
-java.lang.RuntimeException#instance-init#
-==
-addPassenger es.ull.flights.Flight#addPassenger(Les/ull/passengers/Passenger;)Z
-removePassenger es.ull.flights.Flight#removePassenger(Les/ull/passengers/Passenger;)Z
-setFlight es.ull.passengers.Passenger#setFlight(Les/ull/flights/Flight;)V

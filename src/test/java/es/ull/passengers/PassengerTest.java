@@ -86,4 +86,55 @@ public class PassengerTest {
         assertEquals("Passenger John Doe with identifier: ID123 from US", passenger1.toString());
         assertEquals("Passenger Jane Doe with identifier: ID456 from CA", passenger2.toString());
     }
+
+    @Test
+    public void testJoinFlightCannotRemovePassenger() {
+        // Simula un caso donde no se puede eliminar el pasajero del vuelo anterior.
+        Flight previousFlight = new Flight("AB123", 2) {
+            @Override
+            public boolean removePassenger(Passenger passenger) {
+                return false; // Simula que no puede eliminar el pasajero
+            }
+        };
+
+        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        passenger.joinFlight(previousFlight);
+
+        Flight newFlight = new Flight("CD456", 2);
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> passenger.joinFlight(newFlight));
+        assertEquals("Cannot remove passenger", exception.getMessage());
+    }
+
+    @Test
+    public void testJoinFlightCannotAddPassenger() {
+        // Simula un caso donde no se puede agregar el pasajero al nuevo vuelo.
+        Flight flight = new Flight("AB123", 2) {
+            @Override
+            public boolean addPassenger(Passenger passenger) {
+                return false; // Simula que no puede agregar el pasajero
+            }
+        };
+
+        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> passenger.joinFlight(flight));
+        assertEquals("Cannot add passenger", exception.getMessage());
+    }
+
+    @Test
+    public void testJoinFlightNullFlight() {
+        Flight flight = new Flight("AB123", 2);
+        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+
+        // Primero, el pasajero se une a un vuelo
+        passenger.joinFlight(flight);
+        assertEquals(flight, passenger.getFlight());
+
+        // Luego, el pasajero deja el vuelo estableciendo el vuelo como null
+        passenger.joinFlight(null);
+        assertEquals(null, passenger.getFlight());
+        assertEquals(0, flight.getNumberOfPassengers());
+    }
+
 }

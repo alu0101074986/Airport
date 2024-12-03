@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +118,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="es.ull.passengers.PassengerTest" class="method navigator-link" hash-for-method="testJoinFlightCannotAddPassenger">testJoinFlightCannotAddPassenger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="es.ull.passengers.PassengerTest" class="method navigator-link" hash-for-method="testJoinFlightCannotRemovePassenger">testJoinFlightCannotRemovePassenger</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="es.ull.passengers.PassengerTest" class="method navigator-link" hash-for-method="testJoinFlightFails">testJoinFlightFails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="es.ull.passengers.PassengerTest" class="method navigator-link" hash-for-method="testJoinFlightNullFlight">testJoinFlightNullFlight</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,9 +187,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testJoinFlightCannotAddPassenger">
+                  </a> <!-- testJoinFlightCannotAddPassenger -->
+                  <span class="method-name">testJoinFlightCannotAddPassenger</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJoinFlightCannotRemovePassenger">
+                  </a> <!-- testJoinFlightCannotRemovePassenger -->
+                  <span class="method-name">testJoinFlightCannotRemovePassenger</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testJoinFlightFails">
                   </a> <!-- testJoinFlightFails -->
                   <span class="method-name">testJoinFlightFails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJoinFlightNullFlight">
+                  </a> <!-- testJoinFlightNullFlight -->
+                  <span class="method-name">testJoinFlightNullFlight</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -244,36 +280,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testGetters')
 data.setCell(0, 2, 'es.ull.passengers.PassengerTest')
-data.setCell(0, 3, 30);
+data.setCell(0, 3, 43);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testInvalidCountryCode')
 data.setCell(1, 2, 'es.ull.passengers.PassengerTest')
-data.setCell(1, 3, 4);
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testJoinFlightFails')
+data.setCell(2, 1, 'testJoinFlightCannotAddPassenger')
 data.setCell(2, 2, 'es.ull.passengers.PassengerTest')
 data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLeavePreviousFlight')
+data.setCell(3, 1, 'testJoinFlight')
 data.setCell(3, 2, 'es.ull.passengers.PassengerTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testJoinFlight')
+data.setCell(4, 1, 'testJoinFlightCannotRemovePassenger')
 data.setCell(4, 2, 'es.ull.passengers.PassengerTest')
-data.setCell(4, 3, 1);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testToString')
+data.setCell(5, 1, 'testJoinFlightFails')
 data.setCell(5, 2, 'es.ull.passengers.PassengerTest')
 data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testJoinFlightNullFlight')
+data.setCell(6, 2, 'es.ull.passengers.PassengerTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testToString')
+data.setCell(7, 2, 'es.ull.passengers.PassengerTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLeavePreviousFlight')
+data.setCell(8, 2, 'es.ull.passengers.PassengerTest')
+data.setCell(8, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 ms</span>
+              <span class="suite-total-time">Total running time: 58 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -306,23 +354,35 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testInvalidCountryCode</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">58 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testJoinFlight</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testJoinFlightCannotAddPassenger</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testJoinFlightCannotRemovePassenger</span>
+                <span class="method-start">75 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testJoinFlightFails</span>
-                <span class="method-start">50 ms</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testJoinFlightNullFlight</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLeavePreviousFlight</span>
-                <span class="method-start">54 ms</span>
+                <span class="method-start">83 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testToString</span>
-                <span class="method-start">56 ms</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
