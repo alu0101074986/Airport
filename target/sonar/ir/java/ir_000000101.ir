@@ -1,6 +1,6 @@
 
 (
-readjava.io.BufferedReader#read()I(I65535int-1int*this' '("java.io.BufferedReader*this' '("java.io.BufferedReader"¡C
+readjava.io.BufferedReader#read()I(I-1int65535int*this' '("java.io.BufferedReader*this' '("java.io.BufferedReader"¡C
 A
 ) )('result"&
 #dependent-value##dependent-value#2int5
