@@ -1,0 +1,6 @@
+projectKey=airport
+serverUrl=http://localhost:9000
+serverVersion=10.7.0.96327
+dashboardUrl=http://localhost:9000/dashboard?id=airport
+ceTaskId=9e20f634-299f-49e4-bbc2-0d6433714732
+ceTaskUrl=http://localhost:9000/api/ce/task?id=9e20f634-299f-49e4-bbc2-0d6433714732

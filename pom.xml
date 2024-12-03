@@ -73,5 +73,18 @@
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
         </dependency>
+
+        <!-- Coverage -->
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kuali.maven.plugins</groupId>
+            <artifactId>graph-maven-plugin</artifactId>
+            <version>1.2.3</version>
+        </dependency>
     </dependencies>
 </project>
