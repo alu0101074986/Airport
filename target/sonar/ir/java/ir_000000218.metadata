@@ -1,0 +1,9 @@
+es.ull.passengers.Passenger#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+false
+4b925647cdbad15857dd2b59cf205e07
+java.lang.RuntimeException#<init>(Ljava/lang/String;)V
+java.lang.RuntimeException#instance-init#
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+java.util.Locale#getISOCountries()[Ljava/lang/String;
+==
+contains java.util.List#contains(Ljava/lang/Object;)Z

@@ -1,0 +1,10 @@
+
+I
+getNumberOfPassengers.es.ull.flights.Flight#getNumberOfPassengers()I +)thisI I($"es.ull.flights.Flight)thisI I($"es.ull.flights.Flight"¡R
+P
+J J("0
+#get-field# passengers#get-field# passengers*2java.util.Set;
+9
+J J( "!
+sizejava.util.Set#size()I (*2int8
+J J(!*PC:/Users/danie/Documents/GitHub/Airport/src/main/java/es/ull/flights/Flight.java

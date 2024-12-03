@@ -1,0 +1,10 @@
+es.ull.flights.Flight#addPassenger(Les/ull/passengers/Passenger;)Z
+false
+dfee1c4c13550f40b3aa6aa6887f57cc
+java.lang.RuntimeException#<init>(Ljava/lang/String;)V
+java.lang.RuntimeException#instance-init#
+==
+add java.util.Set#add(Ljava/lang/Object;)Z
+getFlightNumber es.ull.flights.Flight#getFlightNumber()Ljava/lang/String;
+getNumberOfPassengers es.ull.flights.Flight#getNumberOfPassengers()I
+setFlight es.ull.passengers.Passenger#setFlight(Les/ull/flights/Flight;)V

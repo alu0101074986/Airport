@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Passenger.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ch13-continuous</a> &gt; <a href="index.source.html" class="el_package">es.ull.passengers</a> &gt; <span class="el_source">Passenger.java</span></div><h1>Passenger.java</h1><pre class="source lang-java linenums">/*
+ * ========================================================================
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ========================================================================
+ */
+
+/**
+ * @mainpage Airport Project Documentation
+ *
+ * @section intro_sec Introducción
+ * Este proyecto gestiona vuelos y pasajeros usando clases como `Flight` y `Passenger`.
+ *
+ * @section usage_sec Uso
+ * - Crear un objeto `Flight` con un número de vuelo y asientos.
+ * - Agregar pasajeros al vuelo usando la clase `Passenger`.
+ *
+ * @section author_sec Autor
+ * Autor: Marcelo Daniel Choque Mamani
+ */
+
+package es.ull.passengers;
+
+import java.util.Arrays;
+import java.util.Locale;
+import es.ull.flights.Flight;
+
+/**
+ * @file Passenger.java
+ * @brief Represents a passenger in the flight system.
+ *
+ * This class handles passenger attributes and provides functionalities for
+ * associating passengers with flights.
+ *
+ * @author Marcelo Daniel Choque Mamani
+ * @version 1.0
+ */
+public class Passenger {
+
+    private String identifier; ///&lt; Unique identifier for the passenger.
+    private String name; ///&lt; Name of the passenger.
+    private String countryCode; ///&lt; ISO country code of the passenger's nationality.
+    private Flight flight; ///&lt; Flight associated with the passenger.
+
+    /**
+     * @brief Constructor for the Passenger class.
+     *
+     * Initializes a new Passenger object with the provided identifier, name,
+     * and country code. Validates the country code against ISO standards.
+     *
+     * @param identifier Unique identifier for the passenger.
+     * @param name Name of the passenger.
+     * @param countryCode ISO country code of the passenger's nationality.
+     * @throws RuntimeException If the country code is invalid.
+     */
+<span class="fc" id="L70">    public Passenger(String identifier, String name, String countryCode) {</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        if (!Arrays.asList(Locale.getISOCountries()).contains(countryCode)) {</span>
+<span class="fc" id="L72">            throw new RuntimeException(&quot;Invalid country code&quot;);</span>
+        }
+
+<span class="fc" id="L75">        this.identifier = identifier;</span>
+<span class="fc" id="L76">        this.name = name;</span>
+<span class="fc" id="L77">        this.countryCode = countryCode;</span>
+<span class="fc" id="L78">    }</span>
+
+    /**
+     * @brief Gets the passenger's identifier.
+     *
+     * @return The unique identifier of the passenger.
+     */
+    public String getIdentifier() {
+<span class="fc" id="L86">        return identifier;</span>
+    }
+
+    /**
+     * @brief Gets the passenger's name.
+     *
+     * @return The name of the passenger.
+     */
+    public String getName() {
+<span class="fc" id="L95">        return name;</span>
+    }
+
+    /**
+     * @brief Gets the passenger's country code.
+     *
+     * @return The ISO country code of the passenger's nationality.
+     */
+    public String getCountryCode() {
+<span class="fc" id="L104">        return countryCode;</span>
+    }
+
+    /**
+     * @brief Gets the flight associated with the passenger.
+     *
+     * @return The flight object associated with the passenger.
+     */
+    public Flight getFlight() {
+<span class="fc" id="L113">        return flight;</span>
+    }
+
+    /**
+     * @brief Joins a flight.
+     *
+     * The passenger leaves their current flight (if any) and joins the specified flight.
+     * Handles removal from the previous flight and addition to the new flight.
+     *
+     * @param flight The flight the passenger wants to join.
+     * @throws RuntimeException If the passenger cannot be removed or added to a flight.
+     */
+    public void joinFlight(Flight flight) {
+<span class="fc" id="L126">        Flight previousFlight = this.flight;</span>
+<span class="fc bfc" id="L127" title="All 2 branches covered.">        if (null != previousFlight) {</span>
+<span class="fc bfc" id="L128" title="All 2 branches covered.">            if (!previousFlight.removePassenger(this)) {</span>
+<span class="fc" id="L129">                throw new RuntimeException(&quot;Cannot remove passenger&quot;);</span>
+            }
+        }
+<span class="fc" id="L132">        setFlight(flight);</span>
+<span class="fc bfc" id="L133" title="All 2 branches covered.">        if (null != flight) {</span>
+<span class="fc bfc" id="L134" title="All 2 branches covered.">            if (!flight.addPassenger(this)) {</span>
+<span class="fc" id="L135">                throw new RuntimeException(&quot;Cannot add passenger&quot;);</span>
+            }
+        }
+<span class="fc" id="L138">    }</span>
+
+    /**
+     * @brief Sets the flight for the passenger.
+     *
+     * Updates the flight associated with the passenger.
+     *
+     * @param flight The new flight for the passenger.
+     */
+    public void setFlight(Flight flight) {
+<span class="fc" id="L148">        this.flight = flight;</span>
+<span class="fc" id="L149">    }</span>
+
+    /**
+     * @brief Converts the passenger information to a string.
+     *
+     * @return A string representation of the passenger's details.
+     */
+    @Override
+    public String toString() {
+<span class="fc" id="L158">        return &quot;Passenger &quot; + getName() + &quot; with identifier: &quot; + getIdentifier() + &quot; from &quot; + getCountryCode();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

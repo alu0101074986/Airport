@@ -1,0 +1,7 @@
+organization=alu0101074986
+projectKey=alu0101074986_Airport
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.58332
+dashboardUrl=https://sonarcloud.io/dashboard?id=alu0101074986_Airport
+ceTaskId=AZONNmwGsxL83M1l4X3-
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZONNmwGsxL83M1l4X3-

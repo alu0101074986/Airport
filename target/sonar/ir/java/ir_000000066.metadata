@@ -1,0 +1,7 @@
+java.util.Arrays#copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+true
+6eb622dd1f27a93311321cd1bd6e9601
+java.lang.NegativeArraySizeException#<init>()V
+java.lang.NegativeArraySizeException#instance-init#
+java.lang.NullPointerException#<init>()V
+java.lang.NullPointerException#instance-init#
