@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T12:53:55 WET" name="Surefire suite" finished-at="2024-12-03T12:53:56 WET" duration-ms="610">
+  <suite started-at="2024-12-03T13:02:31 WET" name="Surefire suite" finished-at="2024-12-03T13:02:31 WET" duration-ms="576">
     <groups>
     </groups>
-    <test started-at="2024-12-03T12:53:55 WET" name="Surefire test" finished-at="2024-12-03T12:53:56 WET" duration-ms="610">
+    <test started-at="2024-12-03T13:02:31 WET" name="Surefire test" finished-at="2024-12-03T13:02:31 WET" duration-ms="576">
       <class name="es.ull.passengers.PassengerTest">
-        <test-method signature="testGetters()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T12:53:56 WET" name="testGetters" finished-at="2024-12-03T12:53:56 WET" duration-ms="70" status="PASS">
+        <test-method signature="testGetters()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T13:02:31 WET" name="testGetters" finished-at="2024-12-03T13:02:31 WET" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetters -->
-        <test-method signature="testInvalidCountryCode()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T12:53:56 WET" name="testInvalidCountryCode" finished-at="2024-12-03T12:53:56 WET" duration-ms="25" status="PASS">
+        <test-method signature="testInvalidCountryCode()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T13:02:31 WET" name="testInvalidCountryCode" finished-at="2024-12-03T13:02:31 WET" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidCountryCode -->
-        <test-method signature="testJoinFlight()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T12:53:56 WET" name="testJoinFlight" finished-at="2024-12-03T12:53:56 WET" duration-ms="11" status="PASS">
+        <test-method signature="testJoinFlight()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T13:02:31 WET" name="testJoinFlight" finished-at="2024-12-03T13:02:31 WET" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJoinFlight -->
-        <test-method signature="testJoinFlightFails()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T12:53:56 WET" name="testJoinFlightFails" finished-at="2024-12-03T12:53:56 WET" duration-ms="16" status="PASS">
+        <test-method signature="testJoinFlightFails()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T13:02:31 WET" name="testJoinFlightFails" finished-at="2024-12-03T13:02:31 WET" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJoinFlightFails -->
-        <test-method signature="testLeavePreviousFlight()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T12:53:56 WET" name="testLeavePreviousFlight" finished-at="2024-12-03T12:53:56 WET" duration-ms="9" status="PASS">
+        <test-method signature="testLeavePreviousFlight()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T13:02:31 WET" name="testLeavePreviousFlight" finished-at="2024-12-03T13:02:31 WET" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLeavePreviousFlight -->
-        <test-method signature="testToString()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T12:53:56 WET" name="testToString" finished-at="2024-12-03T12:53:56 WET" duration-ms="2" status="PASS">
+        <test-method signature="testToString()[pri:0, instance:es.ull.passengers.PassengerTest@488eb7f2]" started-at="2024-12-03T13:02:31 WET" name="testToString" finished-at="2024-12-03T13:02:31 WET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToString -->
