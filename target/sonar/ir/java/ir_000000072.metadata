@@ -1,0 +1,7 @@
+java.util.Arrays#copyOf([CI)[C
+true
+eee0f507e02f706d21b0a5e43d212a37
+java.lang.NegativeArraySizeException#<init>()V
+java.lang.NegativeArraySizeException#instance-init#
+java.lang.NullPointerException#<init>()V
+java.lang.NullPointerException#instance-init#

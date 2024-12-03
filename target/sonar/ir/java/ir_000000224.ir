@@ -1,0 +1,8 @@
+
+N
+	setFlight?es.ull.passengers.Passenger#setFlight(Les/ull/flights/Flight;)V ^/thisN N("es.ull.passengers.Passenger+flightN N('"es.ull.flights.Flight/thisN N("es.ull.passengers.Passenger+flightN N('"es.ull.flights.Flight"L<
+:
+O O("(
+#set-field# flight#set-field# flight*
+
+P P(*VC:/Users/danie/Documents/GitHub/Airport/src/main/java/es/ull/passengers/Passenger.java
