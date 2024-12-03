@@ -29,13 +29,22 @@ import es.ull.passengers.Passenger;
 
 public class Flight {
 
-    private String flightNumber;
-    private int seats;
-    private Set<Passenger> passengers = new HashSet<>();
+    private String flightNumber; ///< The flight number.
+    private int seats; ///< The total number of seats in the flight.
+    private Set<Passenger> passengers = new HashSet<>(); ///< Set of passengers on the flight.
 
-    private static String flightNumberRegex = "^[A-Z]{2}\\d{3,4}$";
-    private static Pattern pattern = Pattern.compile(flightNumberRegex);
+    private static String flightNumberRegex = "^[A-Z]{2}\\d{3,4}$"; ///< Regular expression for validating flight numbers.
+    private static Pattern pattern = Pattern.compile(flightNumberRegex); ///< Pattern object for flight number validation.
 
+    /**
+     * @brief Constructor for the Flight class.
+     *
+     * Initializes a new Flight object with the specified flight number and seats.
+     *
+     * @param flightNumber The flight number to set for the flight.
+     * @param seats The total number of seats available in the flight.
+     * @throws RuntimeException if the provided flight number is invalid.
+     */
     public Flight(String flightNumber, int seats) {
         Matcher matcher = pattern.matcher(flightNumber);
         if (!matcher.matches()) {
@@ -45,14 +54,34 @@ public class Flight {
         this.seats = seats;
     }
 
+    /**
+     * @brief Getter for the flight number.
+     *
+     * @return The flight number.
+     */
     public String getFlightNumber() {
         return flightNumber;
     }
 
+    /**
+     * @brief Getter for the number of passengers on the flight.
+     *
+     * @return The number of passengers on the flight.
+     */
     public int getNumberOfPassengers() {
         return passengers.size();
     }
 
+    /**
+     * @brief Adds a passenger to the flight.
+     *
+     * This method adds the specified passenger to the flight if there are
+     * available seats. Otherwise, it throws a RuntimeException.
+     *
+     * @param passenger The passenger to be added to the flight.
+     * @return true if the passenger is added successfully, false otherwise.
+     * @throws RuntimeException if there are not enough seats for the flight.
+     */
     public boolean addPassenger(Passenger passenger) {
         if (getNumberOfPassengers() >= seats) {
             throw new RuntimeException("Not enough seats for flight " + getFlightNumber());
@@ -61,6 +90,15 @@ public class Flight {
         return passengers.add(passenger);
     }
 
+    /**
+     * @brief Removes a passenger from the flight.
+     *
+     * This method removes the specified passenger from the flight and updates
+     * the passenger's flight association to null.
+     *
+     * @param passenger The passenger to be removed from the flight.
+     * @return true if the passenger is removed successfully, false otherwise.
+     */
     public boolean removePassenger(Passenger passenger) {
         passenger.setFlight(null);
         return passengers.remove(passenger);

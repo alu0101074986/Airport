@@ -1,17 +1,0 @@
-
-7
-#instance-init#$es.ull.flights.Flight#instance-init#+)this ("es.ull.flights.Flight)this ("es.ull.flights.Flight"›?
-=
-"( "(7"
-#new-object##new-object#2java.util.HashSetH
-F
-"( "(7"3
-#instance-init# java.util.HashSet#instance-init#*8<
-:
-"( "(7"'
-<init>java.util.HashSet#<init>()V(*8D
-B
-" "(8"0
-#set-field# passengers#set-field# passengers*
-
- D(*PC:/Users/danie/Documents/GitHub/Airport/src/main/java/es/ull/flights/Flight.java
