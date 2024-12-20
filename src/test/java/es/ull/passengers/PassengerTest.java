@@ -143,31 +143,32 @@ public class PassengerTest {
      */
     @Test
     public void testJoinFlightWithoutLeavingCurrentFlight() {
-        // Crear vuelos
-        Flight currentFlight = new Flight("AB123", 2);
+        // Crear un vuelo actual que no permite eliminar pasajeros
+        Flight currentFlight = new Flight("AB123", 2) {
+            @Override
+            public boolean removePassenger(Passenger passenger) {
+                return false; // Simula que no puede eliminar al pasajero
+            }
+        };
+
+        // Crear un vuelo nuevo
         Flight newFlight = new Flight("CD456", 2);
-    
-        // Crear pasajero y agregarlo al vuelo actual
+
+        // Crear pasajero y asociarlo al vuelo actual
         Passenger passenger = new Passenger("ID123", "John Doe", "US");
-        passenger.joinFlight(currentFlight);
-    
-        // Intentar que el pasajero se una al nuevo vuelo sin dejar correctamente el actual
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            // Simular un estado inconsistente donde el vuelo actual no permite remover al pasajero
-            currentFlight.removePassenger(passenger);
-            passenger.joinFlight(newFlight);
-        });
-    
-        // Verificar que se lanzó una excepción con el mensaje adecuado
+        passenger.setFlight(currentFlight);
+
+        // Intentar que el pasajero se una al nuevo vuelo
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> passenger.joinFlight(newFlight));
+
+        // Verificar que se lanzó la excepción con el mensaje adecuado
         assertEquals("Cannot remove passenger", exception.getMessage());
-    
+
         // Verificar que el pasajero sigue asociado al vuelo actual
         assertEquals(currentFlight, passenger.getFlight());
-        assertEquals(1, currentFlight.getNumberOfPassengers());
-    
-        // Verificar que el nuevo vuelo no tiene pasajeros
         assertEquals(0, newFlight.getNumberOfPassengers());
     }
+
 
 
 }
