@@ -29,6 +29,24 @@ import java.util.regex.Pattern;
 
 import es.ull.passengers.Passenger;
 
+/**
+ * @file Flight.java
+ * @brief Represents a flight in the flight management system.
+ *
+ * The Flight class manages flight information, including the flight number,
+ * the number of seats available, and the list of passengers associated with the flight.
+ * It also handles operations such as adding and removing passengers.
+ *
+ * @details
+ * This class ensures that flight numbers adhere to a specific format and that
+ * passengers can only be added if seats are available. It provides functionality
+ * to manage the passengers and retrieve details about the flight.
+ *
+ * @author Marcelo Daniel Choque Mamani
+ * @version 1.0
+ * @date 2024-12-20
+ */
+
 public class Flight {
 
     private String flightNumber; ///< The flight number.
