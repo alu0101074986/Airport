@@ -151,4 +151,23 @@ public class FlightTest {
         assertNull(passenger1.getFlight());
         assertEquals(1, flight1.getNumberOfPassengers());
     }
+
+    /**
+     * @brief Tests removing a passenger who is not on the flight.
+     */
+    @Test
+    public void testRemovePassengerNotOnFlight() {
+        // Crear un vuelo con capacidad para 2 pasajeros
+        Flight flight = new Flight("AB123", 2);
+    
+        // Crear un pasajero que no está en el vuelo
+        Passenger passenger = new Passenger("ID999", "Unknown Passenger", "FR");
+    
+        // Intentar eliminar al pasajero
+        boolean result = flight.removePassenger(passenger);
+    
+        // Verificar que no se pudo eliminar al pasajero (porque no pertenece al vuelo)
+        assertFalse(result);
+        assertEquals(0, flight.getNumberOfPassengers()); // El número de pasajeros sigue siendo 0
+    }
 }
